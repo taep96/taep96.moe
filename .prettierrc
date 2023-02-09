@@ -1,0 +1,8 @@
+{
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": ["^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderMergeDuplicateImports": true,
+  "importOrderCombineTypeAndValueImports": true
+}
