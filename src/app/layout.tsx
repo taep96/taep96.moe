@@ -6,6 +6,7 @@ const fontMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
   display: "swap",
+  adjustFontFallback: false,
 });
 
 export default function RootLayout({
