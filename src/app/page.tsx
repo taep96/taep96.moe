@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/image";
 import { AtSign, GitHub, Mail } from "react-feather";
 
 import ProfilePicture from "/public/cirno-business.png";
