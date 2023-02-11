@@ -23,7 +23,7 @@ export default function RootLayout({
         >
           <main className="my-12 flex w-4/5 flex-col gap-12">{children}</main>
           <video
-            className="fixed -right-1/4 mt-12 w-10/12 opacity-10"
+            className="fixed -right-1/4 mt-12 w-10/12 opacity-10 -z-50"
             autoPlay
             muted
             loop
