@@ -32,8 +32,14 @@ export const metadata = {
     images: canonical + "apple-touch-icon.png",
   },
   icons: {
-    icon: ["/favicon-16x16.png", "/favicon-32x32.png"],
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+    ],
+    apple: {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+    },
   },
 };
 
