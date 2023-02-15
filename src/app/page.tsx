@@ -3,7 +3,7 @@ import { AtSign, GitHub, Mail } from "react-feather";
 
 import ProfilePicture from "/public/cirno-business.png";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Image
