@@ -1,5 +1,6 @@
 import "@/app/global.css";
 
+import { AnalyticsWrapper } from "@/components/analytics";
 import Archbtw from "@/components/archbtw";
 import { JetBrains_Mono } from "@next/font/google";
 
@@ -64,6 +65,7 @@ export default function RootLayout({
         >
           <main className="my-12 flex w-4/5 flex-col gap-12">{children}</main>
           <Archbtw />
+          <AnalyticsWrapper />
         </body>
       </html>
     </>

@@ -7,6 +7,7 @@ specifiers:
   '@types/node': ^18.13.0
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.10
+  '@vercel/analytics': ^0.1.9
   autoprefixer: ^10.4.13
   eslint: ^8.34.0
   eslint-config-next: ^13.1.6
@@ -28,6 +29,7 @@ specifiers:
 dependencies:
   '@next/env': 13.1.6
   '@next/font': 13.1.6
+  '@vercel/analytics': 0.1.9_react@18.2.0
   next: 13.1.7-canary.15_biqbaboplfbrettd7655fr4n2y
   next-sitemap: 3.1.52_wektoeyhnthc75r2gdvuvwysnu
   react: 18.2.0
@@ -633,6 +635,14 @@ packages:
       '@typescript-eslint/types': 5.51.0
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@vercel/analytics/0.1.9_react@18.2.0:
+    resolution: {integrity: sha512-Lfus/6HAZXQBr4uv5eCtNKrEvthKWQFFcUNh5wC3fWn+4PbHxT8bqcm1TMQfYvGJ8O4TWzn0IfrQFNWh1DHDbQ==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /acorn-jsx/5.3.2_acorn@8.8.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
