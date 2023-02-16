@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ianvs/prettier-plugin-sort-imports': ^3.7.1
+  '@next/env': ^13.1.6
   '@next/font': 13.1.6
   '@types/node': ^18.13.0
   '@types/react': ^18.0.28
@@ -13,6 +14,7 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-tailwindcss: ^3.8.3
   next: 13.1.7-canary.15
+  next-sitemap: ^3.1.52
   postcss: ^8.4.21
   prettier: ^2.8.4
   react: 18.2.0
@@ -24,8 +26,10 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
+  '@next/env': 13.1.6
   '@next/font': 13.1.6
   next: 13.1.7-canary.15_biqbaboplfbrettd7655fr4n2y
+  next-sitemap: 3.1.52_wektoeyhnthc75r2gdvuvwysnu
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-feather: 2.0.10_react@18.2.0
@@ -259,6 +263,10 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@corex/deepmerge/4.0.37:
+    resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
+    dev: false
+
   /@eslint/eslintrc/1.4.1:
     resolution: {integrity: sha512-XXrH9Uarn0stsyldqDYq8r++mROmWRI1xKMXa640Bb//SY1+ECYX6VzT6Lcx5frD0V30XieqJ0oX9I2Xj5aoMA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -355,6 +363,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@next/env/13.1.6:
+    resolution: {integrity: sha512-s+W9Fdqh5MFk6ECrbnVmmAOwxKQuhGMT7xXHrkYIBMBcTiOqNWhv5KbJIboKR5STXxNXl32hllnvKaffzFaWQg==}
+    dev: false
 
   /@next/env/13.1.7-canary.15:
     resolution: {integrity: sha512-LoZMSEGgm/Cb5I36qtnna/IX908AZPNzRCh7unwHWSvyn8EiO+HzW2w6DKzTI8ne5EASMtt1z4VfWTtE/nVLhg==}
@@ -2199,6 +2211,20 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-sitemap/3.1.52_wektoeyhnthc75r2gdvuvwysnu:
+    resolution: {integrity: sha512-tY469i4QRV1PwM9BoL+HdKYBCJ83IQl3PmUNapG/Hxp0MIYIw1hINU8E+Edf5Kr8vHXfVzPqDoul/Abu2P0vkw==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.37
+      '@next/env': 13.1.6
+      minimist: 1.2.7
+      next: 13.1.7-canary.15_biqbaboplfbrettd7655fr4n2y
+    dev: false
 
   /next/13.1.7-canary.15_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-NBywyj3xjM1nc5vtdqLNNMDrRrFRyDtjKHbLwjkT0BFQ5OKlHP0VFWFtd2RNq86gj7nfTdQ1zCvWPiYAzuGjcQ==}
