@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Image
-        className="aspect-square w-64 rounded-full bg-bg/25 shadow-outline"
+        className="aspect-square w-64 rounded-full bg-base/25 shadow-outline"
         src={ProfilePicture}
         alt="Profile Picture"
       />
@@ -22,7 +22,7 @@ export default function HomePage() {
         <hr className="rounded-full border-mint" />
         <footer className="flex flex-wrap gap-x-12 gap-y-2">
           <a
-            className="flex gap-1 text-fg"
+            className="flex gap-1 text-text"
             href="//discord.com"
             target="_blank"
             rel="noreferrer"
@@ -33,7 +33,7 @@ export default function HomePage() {
             </span>
           </a>
           <a
-            className="flex gap-1 text-fg"
+            className="flex gap-1 text-text"
             href="mailto:taep96@cock.li"
             target="_blank"
             rel="noreferrer"
@@ -45,7 +45,7 @@ export default function HomePage() {
             </span>
           </a>
           <a
-            className="flex gap-1 text-fg"
+            className="flex gap-1 text-text"
             href="//github.com/taep96"
             target="_blank"
             rel="noreferrer"

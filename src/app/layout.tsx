@@ -62,7 +62,7 @@ export default function RootLayout({
       <html lang="en">
         <head />
         <body
-          className={`flex items-center justify-center bg-bg bg-cover bg-center font-mono text-fg selection:bg-fennel selection:text-bg ${fontMono.variable}`}
+          className={`flex items-center justify-center bg-base bg-cover bg-center font-mono text-text selection:bg-fennel selection:text-base ${fontMono.variable}`}
         >
           <NavMenu />
           <main className="flex w-4/5 flex-col gap-12">{children}</main>

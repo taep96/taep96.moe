@@ -5,8 +5,9 @@ module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     colors: {
-      bg: "#202231",
-      fg: "#DEE0EF",
+      // https://serendipitytheme.com/
+      base: "#202231",
+      text: "#DEE0EF",
       fennel: "#709BBD",
       mint: "#AAC9D4",
       sky: "#A0B6E8",
