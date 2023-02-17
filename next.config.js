@@ -7,10 +7,22 @@ const nextConfig = {
     appDir: true,
     serverComponentsExternalPackages: ["react-feather"],
   },
+  async headers() {
+    return [
+      {
+        // Apply these headers to all routes in your application.
+        source: "/(.*)*",
+        headers: securityHeaders,
+      },
+    ];
+  },
 };
 
-const ContentSecurityPolicy = `
-    default-src 'self' vitals.vercel-insights.com;
-`;
+const securityHeaders = [
+  {
+    key: "Content-Security-Policy",
+    value: "default-src 'self' vitals.vercel-insights.com;",
+  },
+];
 
 module.exports = nextConfig;
