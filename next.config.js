@@ -23,6 +23,7 @@ const ContentSecurityPolicy = `
   script-src 'self' 'unsafe-eval' 'unsafe-inline' vitals.vercel-insights.com;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
+  connect-src *;
   font-src 'self';
 `;
 
