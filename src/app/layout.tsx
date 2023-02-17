@@ -59,7 +59,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
       <body
         className={`flex items-center justify-center bg-base bg-cover bg-center font-mono text-text selection:bg-fennel selection:text-base ${fontMono.variable}`}
       >
