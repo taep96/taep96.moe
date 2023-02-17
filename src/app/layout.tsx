@@ -5,10 +5,9 @@ import Archbtw from "@/components/archbtw";
 import NavMenu from "@/components/nav-menu";
 import { JetBrains_Mono } from "@next/font/google";
 
+const canonical = "https://taep96.moe/";
 const title = "taep96's epic website";
 const description = "Hey there! I'm taep96!";
-
-const { href: canonical } = new URL(`https://${process.env.VERCEL_URL!}/`);
 
 export const metadata = {
   title: {
@@ -25,6 +24,8 @@ export const metadata = {
     images: [],
     type: "website",
   },
+
+  // todo: something here is causing a react keys warning
   twitter: {
     card: "summary",
     title,
@@ -33,6 +34,7 @@ export const metadata = {
     creatorId: "1541447528595554310",
     images: canonical + "apple-touch-icon.png",
   },
+
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32" },
