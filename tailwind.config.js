@@ -4,16 +4,17 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
+    colors: {
+      bg: "#202231",
+      fg: "#DEE0EF",
+      fennel: "#709BBD",
+      mint: "#AAC9D4",
+    },
+    fontFamily: {
+      mono: ["var(--font-jetbrains-mono)", ...fontFamily.mono],
+    },
+
     extend: {
-      colors: {
-        bg: "#202231",
-        fg: "#DEE0EF",
-        fennel: "#709BBD",
-        mint: "#AAC9D4",
-      },
-      fontFamily: {
-        mono: ["var(--font-jetbrains-mono)", ...fontFamily.mono],
-      },
       boxShadow: {
         outline: `0px 0px 0px 2px #AAC9D440`,
       },
