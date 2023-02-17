@@ -7,9 +7,9 @@ import { Menu } from "react-feather";
 
 const links = [
   { name: "home", href: "/" },
-  { name: "about", href: "/" },
-  { name: "blog", href: "/" },
-  { name: "contact", href: "/" },
+  { name: "about", href: "/about" },
+  { name: "blog", href: "/blog" },
+  { name: "contact", href: "/contact" },
 ];
 
 const colors = {
