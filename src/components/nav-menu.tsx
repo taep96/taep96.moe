@@ -41,8 +41,8 @@ export default function NavMenu() {
         animate={isOpen ? "open" : "closed"}
       >
         <ul className="flex gap-4">
-          {links.map(({ name, href }, i) => (
-            <li key={i}>
+          {links.map(({ name, href }) => (
+            <li key={href}>
               <a
                 className={pathname === href ? "font-bold text-sky" : ""}
                 href={href}
