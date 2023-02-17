@@ -21,7 +21,8 @@ const nextConfig = {
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
-    value: "default-src 'self' 'unsafe-inline' vitals.vercel-insights.com;",
+    value:
+      "default-src 'self' 'unsafe-eval' 'unsafe-inline' vitals.vercel-insights.com;",
   },
 ];
 
