@@ -11,14 +11,15 @@ const links = [
   { name: "blog", href: "/" },
   { name: "contact", href: "/" },
 ];
+
+const colors = {
+  base: "#202231",
+  interface: "#272938",
+};
+
 export default function NavMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  const colors = {
-    base: "#202231",
-    interface: "#272938",
-  };
 
   return (
     <motion.header
