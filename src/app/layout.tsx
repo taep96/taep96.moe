@@ -64,7 +64,8 @@ export default function RootLayout({
         <body
           className={`flex items-center justify-center bg-base bg-cover bg-center font-mono text-text selection:bg-fennel selection:text-base ${fontMono.variable}`}
         >
-          <NavMenu />
+          {process.env.NODE_ENV === "development" && <NavMenu />}
+          {/* <NavMenu /> */}
           <main className="flex w-4/5 flex-col gap-12">{children}</main>
           <Archbtw />
           <AnalyticsWrapper />
