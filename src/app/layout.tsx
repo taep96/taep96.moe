@@ -21,7 +21,7 @@ export const metadata = {
     title,
     description,
     url: canonical,
-    images: [],
+    images: { url: canonical + "apple-touch-icon.png" },
     type: "website",
   },
 
