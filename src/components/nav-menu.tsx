@@ -32,7 +32,7 @@ export default function NavMenu() {
       animate={isOpen ? "open" : "closed"}
     >
       <motion.nav
-        className="bg-[#272938] p-4"
+        className="bg-interface p-4"
         variants={{
           open: { x: "0%", background: colors.interface },
           closed: { x: "100%", background: colors.base },

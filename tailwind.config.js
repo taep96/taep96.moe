@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     colors: {
       // https://serendipitytheme.com/
-      base: "#202231",
-      text: "#DEE0EF",
       fennel: "#709BBD",
       mint: "#AAC9D4",
       sky: "#A0B6E8",
+      base: "#202231",
+      interface: "#272938",
+      text: "#DEE0EF",
     },
     fontFamily: {
       mono: ["var(--font-jetbrains-mono)", ...fontFamily.mono],
