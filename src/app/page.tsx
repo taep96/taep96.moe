@@ -8,6 +8,7 @@ export default function HomePage() {
     <>
       <Image
         className="aspect-square w-64 rounded-full bg-base/25 shadow-outline"
+        loading="eager"
         src={ProfilePicture}
         alt="Profile Picture"
       />
