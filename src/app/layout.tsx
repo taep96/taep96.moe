@@ -58,19 +58,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <html lang="en">
-        <head />
-        <body
-          className={`flex items-center justify-center bg-base bg-cover bg-center font-mono text-text selection:bg-fennel selection:text-base ${fontMono.variable}`}
-        >
-          {process.env.NODE_ENV === "development" && <NavMenu />}
-          {/* <NavMenu /> */}
-          <main className="flex w-4/5 flex-col gap-12">{children}</main>
-          <Archbtw />
-          <AnalyticsWrapper />
-        </body>
-      </html>
-    </>
+    <html lang="en">
+      <head />
+      <body
+        className={`flex items-center justify-center bg-base bg-cover bg-center font-mono text-text selection:bg-fennel selection:text-base ${fontMono.variable}`}
+      >
+        {process.env.NODE_ENV === "development" && <NavMenu />}
+        {/* <NavMenu /> */}
+        <main className="flex w-4/5 flex-col gap-12">{children}</main>
+        <Archbtw />
+        <AnalyticsWrapper />
+      </body>
+    </html>
   );
 }
