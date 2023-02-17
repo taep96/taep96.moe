@@ -18,11 +18,18 @@ const nextConfig = {
   },
 };
 
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' vitals.vercel-insights.com;
+  style-src 'self' 'unsafe-inline';
+  img-src * blob: data:;
+  font-src 'self';
+`;
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
-    value:
-      "default-src 'self' 'unsafe-eval' 'unsafe-inline' vitals.vercel-insights.com;",
+    value: ContentSecurityPolicy.replace(/\n/g, ""),
   },
 ];
 
