@@ -2,6 +2,7 @@ import "@/app/global.css";
 
 import { AnalyticsWrapper } from "@/components/analytics";
 import Archbtw from "@/components/archbtw";
+import NavMenu from "@/components/nav-menu";
 import { JetBrains_Mono } from "@next/font/google";
 
 const title = "taep96's epic website";
@@ -63,7 +64,8 @@ export default function RootLayout({
         <body
           className={`flex items-center justify-center bg-bg bg-cover bg-center font-mono text-fg selection:bg-fennel selection:text-bg ${fontMono.variable}`}
         >
-          <main className="my-12 flex w-4/5 flex-col gap-12">{children}</main>
+          <NavMenu />
+          <main className="flex w-4/5 flex-col gap-12">{children}</main>
           <Archbtw />
           <AnalyticsWrapper />
         </body>

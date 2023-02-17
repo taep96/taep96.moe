@@ -9,6 +9,7 @@ module.exports = {
       fg: "#DEE0EF",
       fennel: "#709BBD",
       mint: "#AAC9D4",
+      sky: "#A0B6E8",
     },
     fontFamily: {
       mono: ["var(--font-jetbrains-mono)", ...fontFamily.mono],
