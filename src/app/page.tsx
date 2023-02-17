@@ -21,43 +21,43 @@ export default function HomePage() {
         </p>
         <hr className="rounded-full border-mint" />
         <footer className="flex flex-wrap gap-x-12 gap-y-2">
-          <a
-            className="flex gap-1 text-text"
-            href="//discord.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link href="//discord.com">
             <AtSign className="aspect-square w-6 text-fennel" />
             <span>
-              taep96<span className="text-fennel">#</span>7980
+              taep96<F>#</F>7980
             </span>
-          </a>
-          <a
-            className="flex gap-1 text-text"
-            href="mailto:taep96@cock.li"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </Link>
+          <Link href="mailto:taep96@cock.li">
             <Mail className="aspect-square w-6 text-fennel" />
             <span>
-              taep96<span className="text-fennel">@</span>cock
-              <span className="text-fennel">.</span>li
+              taep96<F>@</F>cock<F>.</F>li
             </span>
-          </a>
-          <a
-            className="flex gap-1 text-text"
-            href="//github.com/taep96"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitHub className="aspect-square w-6 text-fennel" />
+          </Link>
+          <Link href="//github.com/taep96">
+            <GitHub className="text-fennel" />
             <span>
-              github<span className="text-fennel">.</span>com
-              <span className="text-fennel">/</span>taep96
+              github<F>.</F>com<F>/</F>taep96
             </span>
-          </a>
+          </Link>
         </footer>
       </div>
     </>
   );
+}
+
+function Link({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      className="flex gap-1 text-text"
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {children}
+    </a>
+  );
+}
+
+function F({ children }: { children: React.ReactNode }) {
+  return <span className="text-fennel">{children}</span>;
 }
