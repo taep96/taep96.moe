@@ -9,4 +9,8 @@ const nextConfig = {
   },
 };
 
+const ContentSecurityPolicy = `
+    default-src 'self' vitals.vercel-insights.com;
+`;
+
 module.exports = nextConfig;
