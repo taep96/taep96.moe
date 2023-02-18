@@ -26,7 +26,7 @@ export default function NavMenu() {
       className="fixed right-0 top-0 flex"
       variants={{
         open: { background: colors.interface },
-        closed: { background: colors.base },
+        closed: { background: "#0000" },
       }}
       initial="closed"
       animate={isOpen ? "open" : "closed"}
