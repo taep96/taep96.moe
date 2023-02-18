@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@next/env": "^13.1.6",
-    "@next/font": "13.1.6",
     "@vercel/analytics": "^0.1.10",
     "framer-motion": "^9.0.4",
     "next": "13.1.7-canary.20",

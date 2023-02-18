@@ -4,7 +4,7 @@ import { AnalyticsWrapper } from "@/components/analytics";
 import Archbtw from "@/components/archbtw";
 import NavMenu from "@/components/nav-menu";
 import { isDev } from "@/lib/is-dev";
-import { JetBrains_Mono } from "@next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
 const canonical = process.env.SITE_URL;
 const title = "taep96's epic website";
