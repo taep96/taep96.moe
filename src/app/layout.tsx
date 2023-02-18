@@ -3,6 +3,7 @@ import "@/app/global.css";
 import { AnalyticsWrapper } from "@/components/analytics";
 import Archbtw from "@/components/archbtw";
 import NavMenu from "@/components/nav-menu";
+import { isDev } from "@/lib/is-dev";
 import { JetBrains_Mono } from "@next/font/google";
 
 const canonical = "https://taep96.moe/";
@@ -61,7 +62,7 @@ export default function RootLayout({
       <body
         className={`flex items-center justify-center bg-base bg-cover bg-center font-mono text-text selection:bg-fennel selection:text-base ${fontMono.variable}`}
       >
-        {process.env.NODE_ENV === "development" && <NavMenu />}
+        {isDev() && <NavMenu />}
         {/* <NavMenu /> */}
         <main className="flex w-4/5 flex-col gap-12">{children}</main>
         <Archbtw />
