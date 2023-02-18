@@ -6,7 +6,7 @@ import NavMenu from "@/components/nav-menu";
 import { isDev } from "@/lib/is-dev";
 import { JetBrains_Mono } from "@next/font/google";
 
-const canonical = "https://taep96.moe/";
+const canonical = process.env.SITE_URL;
 const title = "taep96's epic website";
 const description = "Hey there! I'm taep96!";
 
