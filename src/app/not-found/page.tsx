@@ -10,7 +10,7 @@ export const metadata = {
   title: `Page not found`,
 };
 
-export default function NotFoundPage() {
+export default function Page() {
   return (
     <>
       <h1 className="after:animate-cursor after:bg-fennel after:text-fennel after:content-['-']">
