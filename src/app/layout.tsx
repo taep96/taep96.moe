@@ -1,6 +1,6 @@
 import "@/app/global.css";
 
-import { AnalyticsWrapper } from "@/components/analytics";
+import AnalyticsWrapper from "@/components/analytics";
 import Archbtw from "@/components/archbtw";
 import NavMenu from "@/components/nav-menu";
 import { env, isDev } from "@/lib/env";
@@ -15,14 +15,14 @@ export const metadata = {
     default: title,
     template: `%s | ${title}`,
   },
-  description: description,
+  description,
   themeColor: "#202231",
   alternates: { canonical },
   openGraph: {
     title,
     description,
     url: canonical,
-    images: { url: canonical + "apple-touch-icon.png" },
+    images: { url: `${canonical}apple-touch-icon.png` },
     type: "website",
   },
 
@@ -33,7 +33,7 @@ export const metadata = {
     description,
     siteId: "1541447528595554310",
     creatorId: "1541447528595554310",
-    images: canonical + "apple-touch-icon.png",
+    images: `${canonical}apple-touch-icon.png`,
   },
 
   icons: {

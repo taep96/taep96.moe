@@ -3,6 +3,23 @@ import { AtSign, GitHub, Mail } from "react-feather";
 
 import ProfilePicture from "/public/cirno-business.png";
 
+function F({ children }: { children: React.ReactNode }) {
+  return <span className="text-fennel">{children}</span>;
+}
+
+function Link({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      className="flex gap-1 text-text"
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {children}
+    </a>
+  );
+}
+
 export default function Page() {
   return (
     <>
@@ -44,21 +61,4 @@ export default function Page() {
       </div>
     </>
   );
-}
-
-function Link({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a
-      className="flex gap-1 text-text"
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {children}
-    </a>
-  );
-}
-
-function F({ children }: { children: React.ReactNode }) {
-  return <span className="text-fennel">{children}</span>;
 }

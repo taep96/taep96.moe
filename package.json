@@ -13,14 +13,17 @@
   "dependencies": {
     "@next/env": "^13.2.1",
     "@vercel/analytics": "^0.1.10",
+    "autoprefixer": "^10.4.13",
     "framer-motion": "^10.1.0",
     "next": "13.2.3",
     "next-sitemap": "^4.0.2",
+    "postcss": "^8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-feather": "^2.0.10",
     "react-simple-typewriter": "^5.0.1",
     "sharp": "^0.31.3",
+    "tailwindcss": "^3.2.7",
     "zod": "^3.21.2"
   },
   "devDependencies": {
@@ -30,16 +33,19 @@
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
-    "autoprefixer": "^10.4.13",
     "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-next": "^13.2.1",
     "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.9.0",
-    "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.4",
-    "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5"
   }
 }
