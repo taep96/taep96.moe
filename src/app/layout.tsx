@@ -1,10 +1,10 @@
-import "@/app/global.css";
+import "~/app/global.css";
 
-import AnalyticsWrapper from "@/components/analytics";
-import Archbtw from "@/components/archbtw";
-import NavMenu from "@/components/nav-menu";
-import { env, isDev } from "@/lib/env";
 import { JetBrains_Mono } from "next/font/google";
+import AnalyticsWrapper from "~/components/analytics";
+import Archbtw from "~/components/archbtw";
+import NavMenu from "~/components/nav-menu";
+import { env, isDev } from "~/lib/env";
 
 const canonical = env.SITE_URL;
 const title = "taep96's epic website";

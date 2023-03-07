@@ -1,7 +1,6 @@
-import Image from "@/components/image";
+import ProfilePicture from "@public/cirno-business.png";
 import { AtSign, GitHub, Mail } from "react-feather";
-
-import ProfilePicture from "/public/cirno-business.png";
+import Image from "~/components/image";
 
 function F({ children }: { children: React.ReactNode }) {
   return <span className="text-fennel">{children}</span>;
