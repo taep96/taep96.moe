@@ -3,6 +3,7 @@ import "~/app/global.css";
 import { JetBrains_Mono } from "next/font/google";
 import AnalyticsWrapper from "~/components/analytics";
 import Archbtw from "~/components/archbtw";
+import BackgroundCursor from "~/components/background-cursor";
 import NavMenu from "~/components/nav-menu";
 import { env, isDev } from "~/lib/env";
 
@@ -62,6 +63,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {/* <NavMenu /> */}
         <main className="flex w-4/5 flex-col gap-12">{children}</main>
         <Archbtw />
+        <BackgroundCursor />
         <AnalyticsWrapper />
       </body>
     </html>

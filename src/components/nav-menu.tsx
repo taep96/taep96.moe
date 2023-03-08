@@ -22,15 +22,7 @@ export default function NavMenu() {
   const pathname = usePathname();
 
   return (
-    <motion.header
-      className="fixed right-0 top-0 flex"
-      variants={{
-        open: { background: colors.interface },
-        closed: { background: "#0000" },
-      }}
-      initial="closed"
-      animate={isOpen ? "open" : "closed"}
-    >
+    <motion.header className="fixed right-0 top-0 flex">
       <motion.nav
         className="bg-interface p-4"
         variants={{
@@ -63,7 +55,7 @@ export default function NavMenu() {
         animate={isOpen ? "open" : "closed"}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Menu className="box-content p-4 pl-0 text-mint" />
+        <Menu className="box-content p-4 text-mint" />
       </motion.span>
     </motion.header>
   );

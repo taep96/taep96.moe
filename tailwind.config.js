@@ -6,6 +6,8 @@ module.exports = {
   theme: {
     colors: {
       // https://serendipitytheme.com/
+      coral: "#EE8679",
+      salmon: "#F8D2C9",
       fennel: "#709BBD",
       mint: "#AAC9D4",
       sky: "#A0B6E8",
@@ -22,10 +24,15 @@ module.exports = {
         outline: `0px 0px 0px 2px #AAC9D440`,
       },
       animation: {
+        rotate: "rotate 20s infinite",
         cursor: "cursor .8s ease-in-out infinite alternate",
       },
       keyframes: {
-        cursor: { "100%": { opacity: 0 } },
+        rotate: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        cursor: { to: { opacity: 0 } },
       },
     },
   },
