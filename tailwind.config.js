@@ -2,7 +2,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.tsx"],
+  content: ["./app/**/*.tsx", "./components/**/*.tsx"],
   theme: {
     colors: {
       // https://serendipitytheme.com/
