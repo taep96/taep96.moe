@@ -21,7 +21,6 @@ const nextConfig = {
   },
   experimental: {
     appDir: true,
-    serverComponentsExternalPackages: ["react-feather"],
   },
   async headers() {
     return [
