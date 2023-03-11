@@ -4,7 +4,7 @@ import { JetBrains_Mono } from "next/font/google";
 import { env, isDev } from "~/lib/env";
 
 import AnalyticsWrapper from "./analytics";
-import BackgroundCursor from "./background-cursor";
+import BackgroundCursor from "./cursor";
 import EasterEgg from "./easter-egg";
 import NavMenu from "./nav-menu";
 
