@@ -2,7 +2,6 @@ import "~/app/global.css";
 
 import { JetBrains_Mono } from "next/font/google";
 import AnalyticsWrapper from "~/components/analytics";
-import Archbtw from "~/components/archbtw";
 import BackgroundCursor from "~/components/background-cursor";
 import EasterEgg from "~/components/easter-egg";
 import NavMenu from "~/components/nav-menu";
@@ -63,7 +62,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {isDev() && <NavMenu />}
         {/* <NavMenu /> */}
         <main className="flex w-4/5 flex-col gap-12">{children}</main>
-        <Archbtw />
+        <video
+          className="fixed -right-1/4 -z-10 mt-12 w-10/12 opacity-10"
+          autoPlay
+          muted
+          loop
+        >
+          <source src="archbtw.webm" />
+        </video>
         <BackgroundCursor />
         <EasterEgg />
         <AnalyticsWrapper />
