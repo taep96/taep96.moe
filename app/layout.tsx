@@ -1,11 +1,12 @@
 import "~/app/global.css";
 
 import { JetBrains_Mono } from "next/font/google";
-import AnalyticsWrapper from "~/components/analytics";
-import BackgroundCursor from "~/components/background-cursor";
-import EasterEgg from "~/components/easter-egg";
-import NavMenu from "~/components/nav-menu";
 import { env, isDev } from "~/lib/env";
+
+import AnalyticsWrapper from "./analytics";
+import BackgroundCursor from "./background-cursor";
+import EasterEgg from "./easter-egg";
+import NavMenu from "./nav-menu";
 
 const canonical = env.SITE_URL;
 const title = "taep96's epic website";
