@@ -27,8 +27,6 @@ export const metadata = {
     images: { url: `${canonical}apple-touch-icon.png` },
     type: "website",
   },
-
-  // todo: something here is causing a react keys warning
   twitter: {
     card: "summary",
     title,
@@ -37,7 +35,6 @@ export const metadata = {
     creatorId: "1541447528595554310",
     images: `${canonical}apple-touch-icon.png`,
   },
-
   icons: {
     icon: { url: "/favicon-32x32.png" },
     apple: {
