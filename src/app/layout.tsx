@@ -1,8 +1,43 @@
 import "./globals.css";
-import { JetBrains_Mono } from "next/font/google";
+import Font from "next/font/local";
 import { twMerge as tw } from "tailwind-merge";
 
-const font = JetBrains_Mono({ subsets: ["latin"], variable: "--font" });
+const font = Font({
+  src: [
+    {
+      path: "font/MapleMono-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "font/MapleMono-LightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "font/MapleMono-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "font/MapleMono-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "font/MapleMono-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "font/MapleMono-BoldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  adjustFontFallback: false,
+  variable: "--font",
+});
 
 export const metadata = {
   title: "Create Next App",
