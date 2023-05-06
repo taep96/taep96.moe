@@ -47,7 +47,9 @@ export const metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={tw(font.variable, "font-mono")}>{children}</body>
+      <body className={tw(font.variable, "bg-base font-mono text-text")}>
+        {children}
+      </body>
     </html>
   );
 }
