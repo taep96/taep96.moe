@@ -64,7 +64,11 @@ export default function Page() {
             </span>
           </Link>
 
-          <Link className="flex gap-1 md:ml-auto" href="/links">
+          <Link
+            className="flex gap-1 md:ml-auto"
+            href="/links"
+            aria-label="more"
+          >
             <MoreHorizontal className="text-violet" />
           </Link>
         </footer>
