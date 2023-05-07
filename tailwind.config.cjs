@@ -31,6 +31,15 @@ module.exports = {
       sky: "#7397DE",
       mint: "#77AAB3",
     },
+
+    extend: {
+      animation: {
+        cursor: "cursor .8s ease-in-out infinite alternate",
+      },
+      keyframes: {
+        cursor: { to: { opacity: 0 } },
+      },
+    },
   },
   plugins: [],
 };
