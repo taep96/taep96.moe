@@ -1,5 +1,6 @@
 import "./globals.css";
 import Font from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 import { twMerge as tw } from "tailwind-merge";
 
 const font = Font({
@@ -74,6 +75,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

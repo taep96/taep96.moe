@@ -11,6 +11,7 @@
     "format": "prettier . !pnpm-lock.yaml --ignore-path .gitignore --write --check --cache"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
     "next": "13.4.1",
     "postcss": "8.4.23",
