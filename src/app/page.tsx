@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AtSign, GitHub, Mail, MoreHorizontal } from "react-feather";
 
+import H from "~/components/h";
 import ProfilePicture from "/public/profile-picture.png";
 
 export default function Page() {
@@ -73,8 +74,4 @@ export default function Page() {
       <div className="absolute -bottom-8 left-80 -z-50 h-48 w-48 rounded-full bg-gradient-to-r from-mint to-fennel blur-3xl brightness-150" />
     </main>
   );
-}
-
-function H({ children }: { children: React.ReactNode }) {
-  return <span className="text-violet">{children}</span>;
 }
