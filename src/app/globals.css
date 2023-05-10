@@ -13,4 +13,10 @@
   .webkit-tap-transparent {
     -webkit-tap-highlight-color: transparent;
   }
+
+  @supports (-webkit-hyphens: none) {
+    .safari-hidden {
+      display: none;
+    }
+  }
 }

@@ -74,8 +74,8 @@ export default function Page() {
         </footer>
       </div>
 
-      <div className="absolute -bottom-4 left-16 -z-50 h-96 w-96 rounded-full bg-gradient-to-r from-coral to-salmon blur-3xl brightness-150" />
-      <div className="absolute -bottom-8 left-80 -z-50 h-48 w-48 rounded-full bg-gradient-to-r from-mint to-fennel blur-3xl brightness-150" />
+      <div className="safari-hidden absolute -bottom-4 left-16 -z-50 h-96 w-96 rounded-full bg-gradient-to-r from-coral to-salmon blur-3xl brightness-150" />
+      <div className="safari-hidden absolute -bottom-8 left-80 -z-50 h-48 w-48 rounded-full bg-gradient-to-r from-mint to-fennel blur-3xl brightness-150" />
     </main>
   );
 }
