@@ -3,6 +3,8 @@ import Font from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { twMerge as tw } from "tailwind-merge";
 
+import { Nav } from "./client";
+
 const font = Font({
   src: [
     {
@@ -45,7 +47,10 @@ const description = "Hey there! I'm taep96!";
 const url = "https://taep96.moe/";
 
 export const metadata = {
-  title,
+  title: {
+    default: title,
+    template: `%s | ${title}`,
+  },
   description,
   themeColor: "#886CDB",
   metadataBase: new URL("https://taep96.moe/"),
@@ -71,9 +76,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body
         className={tw(
           font.variable,
-          "container mx-auto flex min-h-screen items-center justify-center bg-base p-6 font-mono text-text selection:bg-violet/50"
+          "container mx-auto flex min-h-screen items-center justify-center bg-base px-6 py-16 font-mono text-text selection:bg-violet/50"
         )}
       >
+        <Nav />
         {children}
         <Analytics />
       </body>

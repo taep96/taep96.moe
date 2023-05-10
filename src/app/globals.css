@@ -9,4 +9,8 @@
       "M0 128C0 22.592 22.592 0 128 0C233.408 0 256 22.592 256 128C256 233.408 233.408 256 128 256C22.592 256 0 233.408 0 128Z"
     );
   }
+
+  .webkit-tap-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
