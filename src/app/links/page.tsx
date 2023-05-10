@@ -1,19 +1,12 @@
 import Link from "next/link";
 import { AtSign, GitHub, Mail, Twitter, Youtube } from "react-feather";
 
-import { metadata as rootmeta } from "~/app/layout";
 import H from "~/components/h";
-
-const url = "https://taep96.moe/links";
+import metaUrl from "~/utils/meta-url";
 
 export const metadata = {
-  alternates: {
-    canonical: url,
-  },
-  openGraph: {
-    ...rootmeta.openGraph,
-    url,
-  },
+  title: "links",
+  ...metaUrl("/links"),
 };
 
 export default function Page() {
