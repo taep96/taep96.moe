@@ -72,7 +72,7 @@ export const metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="[scrollbar-gutter:_stable_both-edges]">
       <body
         className={tw(
           font.variable,
