@@ -11,11 +11,6 @@ const config = {
   parserOptions: {
     project: ["./tsconfig.json"],
   },
-  settings: {
-    tailwindcss: {
-      config: "tailwind.config.cjs",
-    },
-  },
   rules: {
     "@typescript-eslint/no-unused-vars": [
       "error",

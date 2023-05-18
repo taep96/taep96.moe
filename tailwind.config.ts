@@ -1,8 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { fontFamily } = require("tailwindcss/defaultTheme");
+import { type Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: ["./src/**/*.{tsx,mdx}"],
   theme: {
     fontFamily: {
@@ -37,9 +36,11 @@ module.exports = {
         cursor: "cursor .8s ease-in-out infinite alternate",
       },
       keyframes: {
-        cursor: { to: { opacity: 0 } },
+        cursor: { to: { opacity: "0" } },
       },
     },
   },
   plugins: [],
-};
+} satisfies Config;
+
+export default config;
