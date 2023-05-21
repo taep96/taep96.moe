@@ -31,12 +31,12 @@ export function Nav() {
           <li className="flex items-center" key={href}>
             <Link
               className={tw(
-                "webkit-tap-transparent relative rounded-full px-3 py-1.5 text-sm font-bold text-[#779324] transition selection:bg-[#779324]/50"
+                "webkit-tap-transparent focus-invert relative rounded-full px-3 py-1.5 text-sm font-bold text-violet transition"
               )}
               onClick={() => navigate(href)}
               href={href}
             >
-              {text}
+              <span className="invert">{text}</span>
               {activeLink === href && (
                 <motion.div
                   layoutId="bubble"
