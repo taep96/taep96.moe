@@ -18,6 +18,12 @@ export function Nav() {
   const pathname = usePathname();
   const [activeLink, setActiveLink] = useState(`/${pathname.split("/")[1]}`);
 
+  // if you have a better way to do this, please let me know
+  function navigate(href: string) {
+    window.scrollTo({ top: 0 });
+    setActiveLink(href);
+  }
+
   return (
     <nav className="fixed top-2 z-50 rounded-full bg-interface">
       <ul className="flex gap-4 p-1 mix-blend-multiply invert">
@@ -27,7 +33,7 @@ export function Nav() {
               className={tw(
                 "webkit-tap-transparent relative rounded-full px-3 py-1.5 text-sm font-bold text-[#779324] transition selection:bg-[#779324]/50"
               )}
-              onClick={() => setActiveLink(href)}
+              onClick={() => navigate(href)}
               href={href}
             >
               {text}
