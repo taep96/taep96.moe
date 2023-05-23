@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
@@ -50,6 +50,14 @@ export function Nav() {
       </ul>
     </nav>
   );
+}
+
+export function Log() {
+  useEffect(() => {
+    console.log("ᗜ˰ᗜ - hi there!");
+  }, []);
+
+  return null;
 }
 
 export function Kaomoji() {

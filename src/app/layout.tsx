@@ -3,7 +3,7 @@ import Font from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { twMerge as tw } from "tailwind-merge";
 
-import { Nav } from "./client";
+import { Log, Nav } from "./client";
 
 const font = Font({
   src: [
@@ -81,6 +81,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <Nav />
         {children}
+        <Log />
         <Analytics />
       </body>
     </html>
