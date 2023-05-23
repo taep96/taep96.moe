@@ -2,7 +2,7 @@ import metaUrl from "~/utils/meta-url";
 
 export const metadata = {
   title: "blog",
-  ...metaUrl("/blog"),
+  ...metaUrl(),
 };
 
 export default function Page() {

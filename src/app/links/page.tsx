@@ -6,7 +6,7 @@ import metaUrl from "~/utils/meta-url";
 
 export const metadata = {
   title: "links",
-  ...metaUrl("/links"),
+  ...metaUrl(),
 };
 
 export default function Page() {

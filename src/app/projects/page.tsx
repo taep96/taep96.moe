@@ -14,7 +14,7 @@ export const revalidate = 60 * 60 * 24;
 
 export const metadata = {
   title: "projects",
-  ...metaUrl("/projects"),
+  ...metaUrl(),
 };
 
 export default async function Page() {
