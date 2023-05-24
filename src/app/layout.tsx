@@ -76,7 +76,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body
         className={tw(
           font.variable,
-          "container mx-auto flex min-h-screen items-center justify-center overflow-x-hidden bg-base px-6 py-16 font-mono text-text selection:bg-violet/50"
+          "container mx-auto flex min-h-screen items-center justify-center overflow-x-hidden bg-base px-6 py-24 font-mono text-text selection:bg-violet/50"
         )}
       >
         <Nav />

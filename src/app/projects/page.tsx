@@ -26,7 +26,7 @@ export default async function Page() {
     .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
 
   return (
-    <main className="my-8 flex flex-col gap-4">
+    <main className="flex flex-col gap-4">
       <h1 className="text-2xl font-bold text-violet">Projects</h1>
       <p>Stuff I made</p>
       <Columns
