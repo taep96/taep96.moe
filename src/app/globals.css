@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Generated using Figma Squircle plugin for 256x256 squircles */
 @layer utilities {
-  *:focus-visible {
-    @apply outline-none outline-violet;
-  }
-
-  .focus-invert {
-    @apply outline-[#779324];
-  }
-
+  /* Generated using Figma Squircle plugin for 256x256 */
   .clip-squircle-64 {
     clip-path: path(
       "M0 128C0 22.592 22.592 0 128 0C233.408 0 256 22.592 256 128C256 233.408 233.408 256 128 256C22.592 256 0 233.408 0 128Z"
     );
+  }
+
+  *:focus-visible {
+    outline: 2px solid theme(colors.violet);
+    outline-offset: 2px;
+  }
+
+  .focus-invert {
+    outline-color: #779324;
   }
 
   .webkit-tap-transparent {
