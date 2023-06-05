@@ -3,6 +3,7 @@ import Font from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { twMerge as tw } from "tailwind-merge";
 
+import tailwind from "/tailwind.config";
 import { Log, Nav } from "./client";
 
 const font = Font({
@@ -52,7 +53,7 @@ export const metadata = {
     template: `%s | ${title}`,
   },
   description,
-  themeColor: "#886CDB",
+  themeColor: tailwind.theme.colors.violet,
   metadataBase: new URL("https://taep96.moe/"),
   alternates: {
     canonical: url,
