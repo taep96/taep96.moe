@@ -32,7 +32,7 @@ const links = [
     icon: AtSign,
     text: (
       <>
-        taep96<H>#</H>7980
+        taep96
       </>
     ),
     href: "//discord.com/",
