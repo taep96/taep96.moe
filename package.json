@@ -13,9 +13,9 @@
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
-    "framer-motion": "^10.12.17",
-    "glob": "^10.3.0",
-    "next": "13.4.7",
+    "framer-motion": "^10.12.18",
+    "glob": "^10.3.1",
+    "next": "13.4.8",
     "octokit": "^2.1.0",
     "postcss": "8.4.24",
     "react": "18.2.0",
@@ -30,19 +30,19 @@
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@types/eslint": "^8.40.2",
-    "@types/node": "^20.3.1",
+    "@types/node": "^20.3.3",
     "@types/prettier": "^2.7.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
     "encoding": "^0.1.13",
-    "eslint": "^8.43.0",
-    "eslint-config-next": "^13.4.7",
+    "eslint": "^8.44.0",
+    "eslint-config-next": "^13.4.8",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-tailwindcss": "^3.12.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.6"
   }
 }
