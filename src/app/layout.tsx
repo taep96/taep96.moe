@@ -1,4 +1,5 @@
 import "./globals.css";
+
 import Font from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { twMerge as tw } from "tailwind-merge";

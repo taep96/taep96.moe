@@ -30,11 +30,7 @@ export default function Page() {
 const links = [
   {
     icon: AtSign,
-    text: (
-      <>
-        taep96
-      </>
-    ),
+    text: <>taep96</>,
     href: "//discord.com/",
   },
   {
