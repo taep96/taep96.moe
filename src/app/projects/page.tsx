@@ -4,8 +4,6 @@ import { Octokit } from "octokit";
 import Columns from "react-auto-columns";
 import { Star } from "react-feather";
 
-import metaUrl from "~/utils/meta-url";
-
 // Projects that aren't worth showing
 const blacklist = ["taep96"];
 
@@ -14,7 +12,6 @@ export const revalidate = 60 * 60 * 24;
 
 export const metadata = {
   title: "projects",
-  ...metaUrl(),
 };
 
 export default async function Page() {

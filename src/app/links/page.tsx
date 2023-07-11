@@ -2,11 +2,9 @@ import Link from "next/link";
 import { AtSign, GitHub, Mail, Twitter, Youtube } from "react-feather";
 
 import H from "~/components/h";
-import metaUrl from "~/utils/meta-url";
 
 export const metadata = {
   title: "links",
-  ...metaUrl(),
 };
 
 export default function Page() {

@@ -46,7 +46,6 @@ const font = Font({
 
 const title = "taep96's epic website";
 const description = "Hey there! I'm taep96!";
-const url = "https://taep96.moe/";
 
 export const metadata = {
   title: {
@@ -56,13 +55,9 @@ export const metadata = {
   description,
   themeColor: tailwind.theme.colors.violet,
   metadataBase: new URL("https://taep96.moe/"),
-  alternates: {
-    canonical: url,
-  },
   openGraph: {
     title,
     description,
-    url,
     images: "apple-icon.png",
   },
   twitter: {
