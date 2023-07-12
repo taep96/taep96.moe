@@ -1,22 +1,27 @@
+import fs from "fs";
 import { compareDesc } from "date-fns";
+import matter from "front-matter";
 import { globSync } from "glob";
-import matter from "gray-matter";
+import path from "path";
+
+type Post = {
+  date: Date;
+  title: string;
+  description: string;
+};
 
 export function getPostBySlug(slug: string) {
-  const postMatter = matter.read(`src/posts/${slug}.mdx`);
+  const post = fs.readFileSync(path.join(process.cwd(), `src/posts/${slug}.mdx`), "utf-8");
+  const {
+    attributes: { date, title, description },
+    body,
+  } = matter<Post>(post);
 
-  if (!postMatter.data.date) throw new Error(`${slug} is missing a date`);
-  if (!postMatter.data.title) throw new Error(`${slug} is missing a title`);
-  if (!postMatter.data.description)
-    throw new Error(`${slug} is missing a description`);
+  if (!date) throw new Error(`${slug} is missing a date`);
+  if (!title) throw new Error(`${slug} is missing a title`);
+  if (!description) throw new Error(`${slug} is missing a description`);
 
-  return {
-    slug,
-    date: postMatter.data.date as Date,
-    title: postMatter.data.title as string,
-    description: postMatter.data.description as string,
-    content: postMatter.content,
-  };
+  return { slug, date, title, description, body };
 }
 
 export function getAllPosts() {

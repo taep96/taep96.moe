@@ -38,7 +38,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </div>
       <article className="prose">
         <MDXRemote
-          source={post.content}
+          source={post.body}
           options={{
             mdxOptions: {
               remarkPlugins: [remarkGfm],
