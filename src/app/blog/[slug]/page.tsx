@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import imageSize from "image-size";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import rehypePrettyCode, { type Options as RehypePrettyCodeOptions } from "rehype-pretty-code";
 import remarkGfm from "remark-gfm";
 
 import { getAllPosts, getPostBySlug } from "../posts";
@@ -22,7 +21,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug) || notFound();
 
   return (
@@ -40,22 +39,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <MDXRemote
           source={post.body}
           options={{
-            mdxOptions: {
-              remarkPlugins: [remarkGfm],
-              rehypePlugins: [
-                [
-                  rehypePrettyCode,
-                  {
-                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                    theme: await (
-                      await fetch(
-                        "https://raw.githubusercontent.com/Serendipity-Theme/vs-code/master/themes/serendipity-morning.json"
-                      )
-                    ).json(),
-                  } satisfies Partial<RehypePrettyCodeOptions>,
-                ],
-              ],
-            },
+            mdxOptions: { remarkPlugins: [remarkGfm] },
           }}
           components={{
             // @ts-expect-error - async component
