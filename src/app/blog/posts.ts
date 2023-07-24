@@ -1,8 +1,8 @@
 import fs from "fs";
+import path from "path";
 import { compareDesc } from "date-fns";
 import matter from "front-matter";
 import { globSync } from "glob";
-import path from "path";
 
 type Post = {
   date: Date;
@@ -11,7 +11,10 @@ type Post = {
 };
 
 export function getPostBySlug(slug: string) {
-  const post = fs.readFileSync(path.join(process.cwd(), `src/posts/${slug}.mdx`), "utf-8");
+  const post = fs.readFileSync(
+    path.join(process.cwd(), `src/posts/${slug}.mdx`),
+    "utf-8"
+  );
   const {
     attributes: { date, title, description },
     body,
