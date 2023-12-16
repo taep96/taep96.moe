@@ -21,7 +21,7 @@
     "image-size": "^1.0.2",
     "next": "13.5.1",
     "next-mdx-remote": "^4.4.1",
-    "octokit": "^3.0.0",
+    "octokit": "^3.1.2",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-auto-columns": "^2.1.0",
