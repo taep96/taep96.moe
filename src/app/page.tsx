@@ -35,7 +35,7 @@ export default function Page() {
         <hr className="rounded-full border-violet" />
 
         <footer className="flex flex-wrap gap-x-12 gap-y-2">
-          <Link className="flex gap-1" href="//discord.com" target="_blank">
+          <Link className="flex gap-1" href="/discord" target="_blank">
             <AtSign className="text-violet" />
             <span className="hover:underline">
               taep96<H>#</H>7980

@@ -7,6 +7,15 @@ const nextConfig = {
       "opengraph.githubassets.com",
     ],
   },
+  redirects() {
+    return [
+      {
+        source: "/discord",
+        destination: process.env.DISCORD_URL,
+        permanent: false,
+      }
+    ];
+  },
 };
 
 export default nextConfig;
